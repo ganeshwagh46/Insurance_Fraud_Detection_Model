@@ -29,7 +29,7 @@ Select the best model and explain the most influential features.
 Provide a reproducible workflow with deployment recommendations.
 
 ## 🛠 Methodology
-Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 
 Checked for duplicate rows, missing values, and class imbalance.
 
@@ -37,7 +37,7 @@ Visualized distributions of numeric features and frequency counts of categorical
 
 Examined correlations and identified outliers.
 
-Cleaning & Preprocessing
+### Cleaning & Preprocessing
 
 Standardized date formats and handled missing values using median/mode or domain-specific rules.
 
@@ -45,13 +45,13 @@ Winsorized extreme outliers in monetary fields.
 
 Created elapsed-time features (e.g., days_since_policy_start) and aggregated historical claim statistics per policyholder.
 
-Feature Engineering
+### Feature Engineering
 
 Encoded categorical variables: one-hot encoding for low-cardinality features and target/ordinal encoding for high-cardinality features.
 
 Scaled numeric features within pipelines where required.
 
-Modeling
+### Modeling
 
 Baseline Models: Logistic Regression, Decision Tree.
 
@@ -61,7 +61,7 @@ Addressed class imbalance using class weights and SMOTE.
 
 Hyperparameter tuning with stratified cross-validation (GridSearchCV/RandomizedSearchCV).
 
-Evaluation
+### Evaluation
 
 Primary Metrics: ROC AUC, F1-score.
 
